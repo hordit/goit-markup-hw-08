@@ -1,0 +1,96 @@
+/*    Icon Button Menu Mobile   */
+
+@each $iconName in $iconBtnMenu {
+  .icon-#{$iconName} {
+    @include widtHeight(40px, 40px);
+    fill: currentColor;
+  }
+}
+
+
+/*    Icon Contacts   */
+
+.icon-envelope {
+  @include widtHeight(16px, 12px);
+}
+
+.icon-mobile {
+  @include widtHeight(10px, 16px);
+}
+@each $iconName in $iconContacts {
+  .icon-#{$iconName} {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}
+
+/*       Icon Skills      */
+
+@each $iconName in $iconSkills {
+  .icon-#{$iconName} {
+    @include widtHeight(70px, 70px);
+  }
+}
+
+/*        Icon Social        */
+
+.icon-social {
+  @include widtHeight(20px, 20px);
+  fill: currentColor;
+}
+
+/*      Icon Clients Logo     */
+
+.icon-logo-yaco {
+  @include widtHeight(44px, 49px);
+  fill: currentColor;
+}
+
+.icon-logo-company-tagline-here {
+  @include widtHeight(40px, 52px);
+  fill: currentColor;
+}
+
+.icon-logo-company {
+  @include widtHeight(41px, 42px);
+  fill: currentColor;
+}
+
+.icon-logo-foster-peters {
+  @include widtHeight(79px, 42px);
+  fill: currentColor;
+}
+
+.icon-logo-brand {
+  @include widtHeight(59px, 47px);
+  fill: currentColor;
+}
+
+.icon-logo-company-tag-line {
+  @include widtHeight(88px, 45px);
+  fill: currentColor;
+}
+
+/*    Footer Icon-Send Form Subscribe    */
+
+.icon-send {
+  margin-left: 10px;
+  @include widtHeight(24px, 24px);
+  fill: currentColor;
+}
+
+/*     Modal Form Icon      */
+
+.modal__form-icon {
+  @include widtHeight(18px, 18px);
+  color: $title-text-color;
+}
+
+/*     Modal Form Icon Checkbox      */
+
+.modal-check-label__icon {
+  margin-right: 9px;
+  @include widtHeight(16px, 15px);
+  border: 2px solid $title-text-color;
+  border-radius: 2px;
+}

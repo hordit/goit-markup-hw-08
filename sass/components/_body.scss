@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+
+  background-color: $primary-white-color;
+  color: $primary-text-color;
+  font-family: $primary-font-family;
+  letter-spacing: 0.03em;
+  min-width: 320px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}

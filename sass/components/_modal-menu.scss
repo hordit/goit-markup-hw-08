@@ -1,0 +1,67 @@
+.menu-button {
+ display: inline-flex;
+ margin: 0;
+ padding: 0;
+ border: none;
+ background-color: transparent;
+
+ @include lg {
+    display: none;
+ }
+}
+
+.icon-cross,
+.icon-menu {
+ transition: color 250ms $cubic;
+}
+
+.menu-button .icon-cross {
+    display: none;
+}
+
+.menu-button.is-open .icon-cross {
+    display: block;
+}
+
+.menu-button.is-open .icon-menu {
+    display: none;
+}
+
+.menu-button:hover .icon-cross,
+.menu-button:focus .icon-cross {
+    color: $accent-color;
+}
+
+.menu-button:hover .icon-menu,
+.menu-button:focus .icon-menu {
+    color: $accent-color;
+}
+
+.menu-container {
+  background-color: $primary-white-color;
+
+  @include lg-max {
+   display: none;
+   position: absolute;
+   top: 100%;
+   left: 0;
+   z-index: 10;
+   padding-top: 40px;
+   padding-bottom: 52px;
+   width: 100%;
+   height: 394px;
+   border-top: 1px solid $primary-border-color;                 
+   
+   &.is-open {
+      display: block;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+   }
+
+  @include lg {
+      @include centeredFlex(flex, center, space-between);
+      flex-grow: 1;
+    }
+}
+
+    

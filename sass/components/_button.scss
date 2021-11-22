@@ -1,0 +1,112 @@
+/*   Header Button Modal   */
+
+.button__modal {
+  display: inline-block;
+  margin: 0;
+  @extend %button;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}
+
+/*     Footer Form Subscribe Button     */
+
+.footer-form__button {
+  @extend %button;
+  @include centeredFlex(inline-flex);
+  @include widtHeight(200px, 50px);
+  margin-left: 12px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  &:hover,
+  &:focus {
+    background-color: $secondary-white-color;
+    color: $title-text-color;
+    cursor: pointer;
+  }
+}
+
+/*     Modal Close-x Button     */
+
+.modal {
+  &__close-x {
+    @include widtHeight(11px, 11px);
+    fill: #000;
+
+    transition: fill 250ms $cubic;
+  }
+  &__close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    @include widtHeight(30px, 30px);
+    background-color: $primary-white-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+
+    transition: all 250ms $cubic;
+  }
+
+  &__close-button:focus-within > &__close-x,
+  &__close-button:hover > &__close-x {
+    fill: $accent-color;
+  }
+}
+
+/*        Submit Button Form        */
+
+.submit-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  min-width: 200px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: $primary-white-color;
+  background-color: $accent-color;
+
+  transition: all 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}
+
+/*      Buttons-Examles of Portfolio      */
+
+.exemple-button {
+  display: inline-block;
+  padding: 6px 22px;
+  border-radius: 4px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-decoration: none;
+  text-align: center;
+
+  color: $title-text-color;
+  background-color: $secondary-white-color;
+
+  transition: all 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $primary-white-color;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}

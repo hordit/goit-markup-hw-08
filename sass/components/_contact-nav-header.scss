@@ -1,0 +1,60 @@
+/*      Contact Nav Header      */
+
+.contact-nav {
+  @extend %list;
+
+ @include lg-max {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 32px;
+  }
+
+ @include lg-xl-max {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  }
+
+  &__email {
+    @include lg-xl-max {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__icon {
+    align-items: center;
+    padding: 0;
+    border: none;
+    color: $primary-text-color;
+
+    transition: color 250ms $cubic;
+  }
+
+  &__icon:hover,
+  &__icon:focus {
+    color: $accent-color;
+  }
+
+  &__link {
+    @extend %link;
+    font-weight: 500;
+    color: $primary-text-color;
+    letter-spacing: 0.02em;
+
+    @include lg-max {
+      @include paddingBotTop(8px, 8px);
+      font-size: 18px;
+      line-height: 1.16667;
+    }
+    @include lg {
+      font-size: 14px;
+      line-height: 1.1428;
+    }
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
+}

@@ -1,0 +1,89 @@
+/*     Site Nav Header      */
+.header {
+  position: relative;
+
+ & {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 3;
+  background-color: #fff;
+
+  @include lg-max {
+    height: 60px;
+  }
+ }
+
+ &__nav {
+   @include lg-max {
+    @include centeredFlex($justify: space-between);
+   }
+
+   @include xl-max {
+     display: flex;
+   }
+ }
+}
+
+.underline::after {
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
+}
+
+.site-nav {
+  @extend %list;
+
+  @include lg-max {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include lg {
+    display: inline-flex;
+  }
+
+  &__item + &__item {
+    @include xl {
+      margin-left: 50px;
+    }
+  }
+
+  &__link {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: $title-text-color;
+    @extend %link;
+
+    transition: color 250ms $cubic;
+
+    @include lg-max {
+      @include paddingBotTop(20px, 20px);
+      font-size: 18px;
+      line-height: 1.16667;
+    }
+
+    @include lg {
+      @include paddingBotTop(32px, 32px);
+      font-size: 14px;
+      line-height: 1.1428;
+    }
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
+}
+
+.current {
+  @include lg-max {
+    padding-bottom: 12px;
+    color: $accent-color;
+  }
+}
