@@ -3,40 +3,36 @@
 .logo {
   font-family: $secondary-font-family;
   font-weight: 700;
+  text-align: center;
 
- @include lg-max {
-    @include paddingBotTop(16px, 16px);
+  @include lg-max {
+    @include paddingTopBot(16px, 16px);
     font-size: 24px;
     line-height: 1.16667;
   }
 
- @include lg {
+  @include lg {
     display: inline-flex;
-    @include paddingBotTop(25px, 25px);
+    @include paddingTopBot(25px, 25px);
     font-size: 26px;
     line-height: 1.1923;
   }
-  @include xl-max {
-    margin-right: 88px;
+
+  &__accent {
+    color: $accent-color;
   }
 
+  /*    Logo Header    */
 
-&__accent {
- color: $accent-color;
- }
+  &__black {
+    color: $title-text-color;
+    @extend %link;
+  }
 
- /*    Logo Header    */
+  /*    Logo Footer    */
 
-&__black {
- color: $title-text-color;
- @extend %link;
- }
-
- /*    Logo Footer    */
-
-&__white {
- color: $primary-white-color;
- @extend %link;
- }
+  &__white {
+    color: $primary-white-color;
+    @extend %link;
+  }
 }
-

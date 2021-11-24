@@ -24,3 +24,16 @@ img {
   border: 0;
   clip: rect(0 0 0 0);
 }
+
+.title {
+  margin-top: 0;
+  font-weight: 700;
+  text-align: center;
+  color: $title-text-color;
+
+  @include lg-max {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.17857;
+  }
+}

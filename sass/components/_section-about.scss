@@ -1,0 +1,37 @@
+.mobileversion {
+  @include lg-max {
+    display: none;
+  }
+}
+
+.about {
+  display: flex;
+  @extend %list;
+
+  &__item {
+    position: relative;
+    width: 370px;
+  }
+
+  &__item + &__item {
+    margin-left: 30px;
+  }
+
+  &__description {
+    position: absolute;
+    @include centeredFlex();
+    @include widtHeight(100%, 70px);
+    bottom: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+
+  &__text {
+    font-family: $primary-font-family;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    text-align: center;
+    text-transform: uppercase;
+    color: $primary-white-color;
+  }
+}

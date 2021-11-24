@@ -1,16 +1,18 @@
 .container {
-  margin: 0 auto;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 
-    @include md {
-        width: 480px;
-    }
+  @include md {
+    width: 480px;
+  }
 
-    @include lg {
-        width: 768px;
-    }
+  @include lg {
+    width: 768px;
+  }
 
-    @include xl {
-        width: 1200px;
-    }
+  @include xl {
+    width: 1200px;
+  }
 }

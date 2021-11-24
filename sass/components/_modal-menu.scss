@@ -1,67 +1,65 @@
 .menu-button {
- display: inline-flex;
- margin: 0;
- padding: 0;
- border: none;
- background-color: transparent;
+  display: inline-flex;
+  border: none;
+  background-color: transparent;
 
- @include lg {
+  @include lg {
     display: none;
- }
-}
-
-.icon-cross,
-.icon-menu {
- transition: color 250ms $cubic;
+  }
 }
 
 .menu-button .icon-cross {
-    display: none;
+  display: none;
 }
 
 .menu-button.is-open .icon-cross {
-    display: block;
+  display: block;
 }
 
 .menu-button.is-open .icon-menu {
-    display: none;
-}
-
-.menu-button:hover .icon-cross,
-.menu-button:focus .icon-cross {
-    color: $accent-color;
-}
-
-.menu-button:hover .icon-menu,
-.menu-button:focus .icon-menu {
-    color: $accent-color;
+  display: none;
 }
 
 .menu-container {
   background-color: $primary-white-color;
 
   @include lg-max {
-   display: none;
-   position: absolute;
-   top: 100%;
-   left: 0;
-   z-index: 10;
-   padding-top: 40px;
-   padding-bottom: 52px;
-   width: 100%;
-   height: 394px;
-   border-top: 1px solid $primary-border-color;                 
-   
-   &.is-open {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    padding-top: 40px;
+    padding-bottom: 52px;
+    width: 100%;
+    height: 393px;
+    border-top: 1px solid $primary-border-color;
+
+    &.is-open {
       display: block;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
+        0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
     }
-   }
+  }
 
   @include lg {
-      @include centeredFlex(flex, center, space-between);
-      flex-grow: 1;
-    }
+    @include centeredFlex(flex, center, space-between);
+    flex-grow: 1;
+  }
 }
 
-    
+.icon-cross,
+.icon-menu {
+  fill: $title-text-color;
+  transition: fill 250ms $cubic;
+}
+
+.menu-button:hover .icon-menu,
+.menu-button:focus .icon-menu {
+  fill: $accent-color;
+}
+
+.menu-button:hover .icon-cross,
+.menu-button:focus .icon-cross {
+  fill: $accent-color;
+}
