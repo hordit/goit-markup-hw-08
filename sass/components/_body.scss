@@ -8,6 +8,14 @@ body {
   min-width: 320px;
 }
 
+main {
+  padding-top: 80px;
+
+  @include lg-max {
+    padding-top: 60px;
+  }
+}
+
 img {
   display: block;
   max-width: 100%;

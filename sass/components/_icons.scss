@@ -79,8 +79,9 @@
 /*     Modal Form Icon Checkbox      */
 
 .modal-check-label__icon {
-  margin-right: 9px;
   @include widtHeight(16px, 15px);
-  border: 2px solid $title-text-color;
   border-radius: 2px;
+  border: 2px solid $title-text-color;
+  margin-right: 7px;
+  vertical-align: middle;
 }
