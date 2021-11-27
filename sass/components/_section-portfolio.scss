@@ -1,0 +1,123 @@
+/*      Buttons-Examles of Portfolio      */
+
+.exm-button {
+  @include lg-max {
+    margin-bottom: 25px;
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
+  @include xl {
+    margin-bottom: 30px;
+    @include centeredFlex();
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &__item {
+    @include lg-max {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+/*            Examples Works         */
+
+.examples {
+  @extend %list;
+
+  @include xl {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  &__link {
+    @extend %link;
+  }
+
+  &__item:not(:last-child) {
+    @include lg-max {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__item {
+    @include xl {
+      width: calc((100% - 90px) / 3);
+      margin: 15px;
+    }
+  }
+
+  &__work {
+    display: block;
+  }
+
+  &__item:hover,
+  &__item:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: box-shadow 250ms $cubic;
+  }
+}
+
+.border-text {
+  padding: 20px 24px;
+
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.project-name {
+  margin-top: 0;
+  margin-bottom: 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $title-text-color;
+}
+
+.project-description {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  color: $primary-text-color;
+}
+
+/*          Product Thumb and Action        */
+
+.product-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-action {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 63px 24px;
+  @include widtHeight(100%, 100%);
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 250ms $cubic;
+
+  &__text {
+    font-family: $primary-font-family;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    color: $primary-white-color;
+  }
+}
+
+.product-thumb:hover .product-action {
+  transform: translateY(0);
+  transition: transform 250ms $cubic;
+}

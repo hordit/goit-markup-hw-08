@@ -4,73 +4,108 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-   <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
 
     <!---------------------Header----------------------->
 
-    <header class=" header line-border">
+    <header class="header line-border">
       <div class="container main-nav">
-        <nav class="header_nav">
+        <nav class="header__nav">
           <div class="logo">
-            <a href="./index.html" class="logo-black">
-            <span class="logo-accent">Web</span>Studio
+            <a href="./index.html" class="logo__black">
+            <span class="logo__accent">Web</span>Studio
             </a>
           </div>
           
-          <ul class="site-nav">
-            <li class="site-nav__item"><a href="index.html" class="site-nav__link">Студия </a></li>
-            <li class="site-nav__item underline">
-              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
-            </li>
-            <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
-          </ul>
+          <!-------------------------Menu for Mobile---------------------->
+
+          <button
+            class="menu-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="icon-cross"
+                href="./images/sprite.svg#close_40px"
+              ></use>
+              <use class="icon-menu" href="./images/sprite.svg#menu_40px"></use>
+            </svg>
+          </button>
+          <div class="menu-container" id="menu-container" data-menu>
+            <div class="navigation">
+              <ul class="site-nav">
+                <li class="site-nav__item">
+                  <a href="./index.html" class="site-nav__link"
+                    >Студия
+                  </a>
+                </li>
+                <li class="site-nav__item underline">
+                  <a href="./portfolio.html" class="site-nav__link current"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="site-nav__item">
+                  <a href="" class="site-nav__link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+
+            <!---------------------------Contacts----------------------------->
+
+            <div class="contacts">
+              <ul class="contact-nav">
+                <li class="contact-nav__item contact-nav__email">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="contact-nav__link contact-nav__icon"
+                    aria-label="конверт"
+                  >
+                    <svg class="icon-envelope">
+                      <use href="./images/sprite.svg#envelope"></use>
+                    </svg>
+                    info@devstudio.com
+                  </a>
+                </li>
+                <li class="contact-nav__item">
+                  <a
+                    href="tel:+380961111111"
+                    class="contact-nav__link contact-nav__icon"
+                    aria-label="телефон"
+                  >
+                    <svg class="icon-mobile">
+                      <use href="./images/sprite.svg#mobile"></use>
+                    </svg>
+                    +38 096 111 11 11
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
-        <ul class="contact-nav">
-          <li class="contact-nav__item">
-            <a href="" class="contact-nav__link contact-nav__icon">
-              <svg class="icon-envelope" aria-label="конверт">
-                <use href="./images/sprite.svg#envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contact-nav__item">
-            <a href="" class="contact-nav__link contact-nav__icon" aria-label="телефон">
-              <svg class="icon-mobile">
-                <use href="./images/sprite.svg#mobile"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
       </div>
     </header>
 
-    <!--Герой-->
+    <!-------------------------------Hero--------------------------------->
+
+
     <main>
       <section class="section section-portfolio">
-        <!--<h1>Портфолио</h1>-->
-        <div class="container list-examples">
-          <!-- <ul class="list button-list">
-    <li class="item"><a href="" class="button-exemple">Все</a></li>
-    <li class="item"><a href="" class="button-exemple">Веб-сайты</a></li>
-    <li class="item"><a href="" class="button-exemple">Приложения</a></li>
-    <li class="item"><a href="" class="button-exemple">Дизайн</a></li>
-    <li class="item"><a href="" class="button-exemple">Маркетинг</a></li>
-   </ul> -->
 
-          <form class="exm-button">
+        <h2 class="visually-hidden">Портфолио</h2>
+        
+        <div class="container">
+
+         <form class="exm-button">
             <label class="exemple-button exm-button__item"> Все </label>
             <label class="exemple-button exm-button__item"> Веб-сайты </label>
             <label class="exemple-button exm-button__item"> Приложения </label>
@@ -344,5 +379,10 @@
         </div>
       </div>
     </footer>
+
+    <!--------------------------Script----------------------------->
+
+    <script src="./js/menu.js"></script>
+  
   </body>
 </html>
