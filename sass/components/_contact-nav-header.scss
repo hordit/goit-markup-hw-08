@@ -16,9 +16,18 @@
     align-items: flex-start;
   }
 
+  @include xl {
+    @include centeredFlex();
+    margin-left: auto;
+  }
+
   &__email {
     @include lg-xl-max {
       margin-bottom: 10px;
+    }
+
+    @include xl {
+      margin-right: 30px;
     }
   }
 
@@ -38,6 +47,7 @@
 
   &__link {
     @extend %link;
+    display: flex;
     font-weight: 500;
     color: $primary-text-color;
     letter-spacing: 0.02em;
@@ -58,5 +68,11 @@
   &__link:hover,
   &__link:focus {
     color: $accent-color;
+  }
+
+  &__item:not(:last-child) {
+    @include xl {
+      margin-right: 30px;
+    }
   }
 }

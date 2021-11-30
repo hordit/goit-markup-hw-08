@@ -4,7 +4,7 @@
   justify-content: $justify;
 }
 
-@mixin paddingTopBot($top: 94px, $bottom: 94px) {
+@mixin paddingTopBot($top: 60px, $bottom: 60px) {
   padding-top: $top;
   padding-bottom: $bottom;
 }
@@ -52,7 +52,7 @@
 
 /*    Small devices Min and Max    */
 @mixin lg-xl-max {
-  @media screen and (min-width: #{$screen-lg-min}) and (max-width: #{$screen-lg-max}) {
+  @media screen and (min-width: #{$screen-lg-min}) and (max-width: #{$screen-xl-max}) {
     @content;
   }
 }

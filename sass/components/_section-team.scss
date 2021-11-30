@@ -3,8 +3,18 @@
   text-align: center;
   background-color: $secondary-white-color;
 
+  @include lg-xl-max {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @include xl {
+    display: flex;
+  }
+
   &__item {
-    padding-bottom: 30px;
+    padding-bottom: 24px;
     background-color: $primary-white-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -13,6 +23,22 @@
     &:not(:last-child) {
       @include lg-max {
         margin-bottom: 30px;
+      }
+    }
+
+    @include lg-xl-max {
+      width: calc((100% - 60px) / 2);
+      margin: 15px;
+    }
+
+    @include xl {
+      padding-bottom: 30px;
+      width: 270px;
+    }
+
+    &:not(:last-child) {
+      @include xl {
+        margin-right: 30px;
       }
     }
   }

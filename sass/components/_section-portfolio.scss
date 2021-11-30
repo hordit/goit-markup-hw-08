@@ -1,25 +1,19 @@
-/*      Buttons-Examles of Portfolio      */
-
 .exm-button {
   @include lg-max {
-    margin-bottom: 25px;
     display: inline-flex;
     flex-wrap: wrap;
+    margin-bottom: -15px;
+  }
+
+  @include lg-xl-max {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
   }
 
   @include xl {
-    margin-bottom: 30px;
     @include centeredFlex();
-  }
-
-  &__item:not(:last-child) {
-    margin-right: 8px;
-  }
-
-  &__item {
-    @include lg-max {
-      margin-bottom: 15px;
-    }
+    margin-bottom: 50px;
   }
 }
 
@@ -27,6 +21,10 @@
 
 .examples {
   @extend %list;
+
+  @include lg-max {
+    margin-top: 40px;
+  }
 
   @include xl {
     display: flex;
@@ -36,6 +34,10 @@
 
   &__link {
     @extend %link;
+  }
+
+  &__work {
+    display: block;
   }
 
   &__item:not(:last-child) {
@@ -49,10 +51,6 @@
       width: calc((100% - 90px) / 3);
       margin: 15px;
     }
-  }
-
-  &__work {
-    display: block;
   }
 
   &__item:hover,

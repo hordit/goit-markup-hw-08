@@ -14,16 +14,35 @@
     @include lg-max {
       text-align: center;
     }
+
+    @include lg-xl-max {
+      @include centeredFlex($centered: baseline);
+      flex-wrap: wrap;
+    }
+
+    @include xl {
+      display: flex;
+      align-items: baseline;
+    }
+  }
+
+  &__address,
+  .footer-social {
+    @include lg-xl-max {
+      flex-basis: 50%;
+      text-align: center;
+    }
   }
 }
 
 /*     Footer Contact Address     */
 
 .contact {
-  @include paddingTopBot(60px, 60px);
+  @include paddingTopBot();
 }
 
 .address {
+  margin: 0;
   margin-top: 20px;
   font-style: normal;
   font-weight: 400;
@@ -31,13 +50,17 @@
   line-height: 1.71;
   color: $primary-white-color;
 
-  @include lg-max {
+  @include xl-max {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 5px;
-    padding-bottom: 60px;
     align-items: center;
+  }
+
+  @include xl {
+    display: flex;
+    flex-direction: column;
   }
 
   &__item {
@@ -59,11 +82,17 @@
 /*          Footer Form Subscribe         */
 
 .footer-subs {
+  @include lg-xl-max {
+    text-align: center;
+    @include paddingTopBot($bottom: 0);
+  }
+
+  @include xl {
+    margin-left: 93px;
+  }
 
   &__title {
-    margin: 0;
     margin-bottom: 20px;
-
     font-family: $primary-font-family;
     font-weight: 700;
     font-size: 14px;
@@ -74,7 +103,7 @@
 }
 
 .form-subs {
-  @include lg-max {
+  @include lg-xl-max {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,8 +118,9 @@
     border-radius: 4px;
     background-color: $secondary-background-color;
 
-    @include lg-max {
+    @include lg-xl-max {
       margin-bottom: 20px;
+      width: 450px;
     }
   }
 }

@@ -8,7 +8,6 @@
   </head>
 
   <body>
-
     <!---------------------Header----------------------->
 
     <header class="header line-border">
@@ -16,10 +15,10 @@
         <nav class="header__nav">
           <div class="logo">
             <a href="./index.html" class="logo__black">
-            <span class="logo__accent">Web</span>Studio
+              <span class="logo__accent">Web</span>Studio
             </a>
           </div>
-          
+
           <!-------------------------Menu for Mobile---------------------->
 
           <button
@@ -45,11 +44,9 @@
             <div class="navigation">
               <ul class="site-nav">
                 <li class="site-nav__item">
-                  <a href="./index.html" class="site-nav__link"
-                    >Студия
-                  </a>
+                  <a href="./index.html" class="site-nav__link">Студия </a>
                 </li>
-                <li class="site-nav__item underline">
+                <li class="site-nav__item">
                   <a href="./portfolio.html" class="site-nav__link current"
                     >Портфолио</a
                   >
@@ -97,25 +94,55 @@
 
     <!-------------------------------Hero--------------------------------->
 
-
     <main>
-      <section class="section section-portfolio">
-
-        <h2 class="visually-hidden">Портфолио</h2>
-        
+      <section class="section">
+        <h1 class="visually-hidden">Портфолио</h1>
         <div class="container">
+          <form class="exm-button">
+            <input
+              type="radio"
+              class="visually-hidden"
+              name="category"
+              id="all"
+            />
+            <label class="example-button" for="all">Все</label>
 
-         <form class="exm-button">
-            <label class="exemple-button exm-button__item"> Все </label>
-            <label class="exemple-button exm-button__item"> Веб-сайты </label>
-            <label class="exemple-button exm-button__item"> Приложения </label>
-            <label class="exemple-button exm-button__item"> Дизайн </label>
-            <label class="exemple-button exm-button__item"> Маркетинг </label>
+            <input
+              type="radio"
+              class="visually-hidden"
+              name="category"
+              id="web-sites"
+            />
+            <label class="example-button" for="web-sites">Веб-сайты</label>
+
+            <input
+              type="radio"
+              class="visually-hidden"
+              name="category"
+              id="app"
+            />
+            <label class="example-button" for="app">Приложения</label>
+
+            <input
+              type="radio"
+              class="visually-hidden"
+              name="category"
+              id="design"
+            />
+            <label class="example-button" for="design">Дизайн</label>
+
+            <input
+              type="radio"
+              class="visually-hidden"
+              name="category"
+              id="marketing"
+            />
+            <label class="example-button" for="marketing">Маркетинг</label>
           </form>
 
           <ul class="examples">
             <li class="examples__item">
-              <a class="examples__link examples__work" href>
+              <a href="" class="examples__link examples__work">
                 <div class="product-thumb">
                   <img
                     src="./images/img1-sq.jpeg"
@@ -139,7 +166,7 @@
               </a>
             </li>
             <li class="examples__item">
-              <a class="examples__link exemples__work" href>
+              <a href="" class="examples__link examples__work">
                 <div class="product-thumb">
                   <img
                     src="./images/img2-sq.jpeg"
@@ -163,7 +190,7 @@
               </a>
             </li>
             <li class="examples__item">
-              <a class="examples__link exemples__work" href>
+              <a href="" class="examples__link examples__work">
                 <div class="product-thumb">
                   <img
                     src="./images/img3-sq.jpeg"
@@ -187,15 +214,15 @@
               </a>
             </li>
             <li class="examples__item">
-              <a class="examples__link exemples__work" href>
+              <a href="" class="examples__link examples__work">
                 <div class="product-thumb">
-              <img
-                src="./images/img4-sq.jpeg"
-                alt="Headphones"
-                width="370"
-                height="294"
-              />
-              <div class="product-action">
+                  <img
+                    src="./images/img4-sq.jpeg"
+                    alt="Headphones"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="product-action">
                     <p class="product-action__text">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -203,22 +230,23 @@
                       конкурентов.
                     </p>
                   </div>
-              </div>
-              <div class="border-text">
-                <h2 class="project-name">Проект Prime</h2>
-                <p class="project-description">Маркетинг</p>
-              </div>
+                </div>
+                <div class="border-text">
+                  <h2 class="project-name">Проект Prime</h2>
+                  <p class="project-description">Маркетинг</p>
+                </div>
+              </a>
             </li>
             <li class="examples__item">
-              <a class="examples__link exemples__work" href>
+              <a href="" class="examples__link examples__work">
                 <div class="product-thumb">
-              <img
-                src="./images/img5-sq.jpeg"
-                alt="Two boxes"
-                width="370"
-                height="294"
-              />
-              <div class="product-action">
+                  <img
+                    src="./images/img5-sq.jpeg"
+                    alt="Two boxes"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="product-action">
                     <p class="product-action__text">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -226,22 +254,23 @@
                       конкурентов.
                     </p>
                   </div>
-              </div>
-              <div class="border-text">
-                <h2 class="project-name">Проект Boxes</h2>
-                <p class="project-description">Приложение</p>
-              </div>
+                </div>
+                <div class="border-text">
+                  <h2 class="project-name">Проект Boxes</h2>
+                  <p class="project-description">Приложение</p>
+                </div>
+              </a>
             </li>
             <li class="examples__item">
-              <a class="examples__link examples__work" href>
+              <a href="" class="examples__link examples__work">
                 <div class="product-thumb">
-              <img
-                src="./images/img6-sq.jpeg"
-                alt="Computer monitor"
-                width="370"
-                height="294"
-              />
-              <div class="product-action">
+                  <img
+                    src="./images/img6-sq.jpeg"
+                    alt="Computer monitor"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="product-action">
                     <p class="product-action__text">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -249,22 +278,23 @@
                       конкурентов.
                     </p>
                   </div>
-              </div>
-              <div class="border-text">
-                <h2 class="project-name">Inspiration has no Borders</h2>
-                <p class="project-description">Веб-сайт</p>
-              </div>
+                </div>
+                <div class="border-text">
+                  <h2 class="project-name">Inspiration has no Borders</h2>
+                  <p class="project-description">Веб-сайт</p>
+                </div>
+              </a>
             </li>
             <li class="examples__item">
-              <a class="examples__link examples__work" href>
+              <a href="" class="examples__link examples__work">
                 <div class="product-thumb">
-              <img
-                src="./images/img7-sq.jpeg"
-                alt="Open magazine"
-                width="370"
-                height="294"
-              />
-              <div class="product-action">
+                  <img
+                    src="./images/img7-sq.jpeg"
+                    alt="Open magazine"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="product-action">
                     <p class="product-action__text">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -272,22 +302,23 @@
                       конкурентов.
                     </p>
                   </div>
-              </div>
-              <div class="border-text">
-                <h2 class="project-name">Издание Limited Edition</h2>
-                <p class="project-description">Дизайн</p>
-              </div>
+                </div>
+                <div class="border-text">
+                  <h2 class="project-name">Издание Limited Edition</h2>
+                  <p class="project-description">Дизайн</p>
+                </div>
+              </a>
             </li>
             <li class="examples__item">
-              <a class="examples__link examples__work" href>
+              <a href="" class="examples__link examples__work">
                 <div class="product-thumb">
-              <img
-                src="./images/img8-sq.jpeg"
-                alt="Label"
-                width="370"
-                height="294"
-              />
-              <div class="product-action">
+                  <img
+                    src="./images/img8-sq.jpeg"
+                    alt="Label"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="product-action">
                     <p class="product-action__text">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -295,22 +326,23 @@
                       конкурентов.
                     </p>
                   </div>
-              </div>
-              <div class="border-text">
-                <h2 class="project-name">Проект LAB</h2>
-                <p class="project-description">Маркетинг</p>
-              </div>
+                </div>
+                <div class="border-text">
+                  <h2 class="project-name">Проект LAB</h2>
+                  <p class="project-description">Маркетинг</p>
+                </div>
+              </a>
             </li>
             <li class="examples__item">
-              <a class="examples__link examples__work" href>
+              <a href="" class="examples__link examples__work">
                 <div class="product-thumb">
-              <img
-                src="./images/img9-sq.jpeg"
-                alt="Businessman working on laptop"
-                width="370"
-                height="294"
-              />
-              <div class="product-action">
+                  <img
+                    src="./images/img9-sq.jpeg"
+                    alt="Businessman working on laptop"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="product-action">
                     <p class="product-action__text">
                       Технокряк это современная площадка распространения
                       коронавируса. Компании используют эту платформу для
@@ -318,11 +350,12 @@
                       конкурентов.
                     </p>
                   </div>
-              </div>
-              <div class="border-text">
-                <h2 class="project-name">Growing Business</h2>
-                <p class="project-description">Приложение</p>
-              </div>
+                </div>
+                <div class="border-text">
+                  <h2 class="project-name">Growing Business</h2>
+                  <p class="project-description">Приложение</p>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -330,20 +363,38 @@
     </main>
 
     <!------------------------Footer------------------------->
-    
+
     <footer class="footer contact">
       <div class="container footer__container">
-        <div>
-          <a href="./index.html" class="logo-white">
-            <span class="logo-accent">Web</span>Studio
-          </a>
+        <div class="footer__address">
+          <div>
+            <a href="./index.html" class="logo logo__white">
+              <span class="logo__accent">Web</span>Studio
+            </a>
+          </div>
+
+          <!----------------------Address--------------------->
+
           <address class="address">
-            <p class="address__item">г. Киев, пр-т Леси Украинки, 26</p>
-            <a class="address__item address__link" href="">info@example.com</a>
-            <a class="address__item address__link" href="">+38 099 111 11 11</a>
+            <a
+              href="https://goo.gl/maps/pVzpR7jKzoyMF15a7"
+              class="address__item address__link"
+              target="_blank"
+              rel="noreferrer noopener"
+              >г. Киев, пр-т Леси Украинки, 26</a
+            >
+            <a
+              href="mailto:info@example.com"
+              class="address__item address__link"
+              >info@example.com</a
+            >
+            <a href="tel:+380991111111" class="address__item address__link"
+              >+38 099 111 11 11</a
+            >
           </address>
-       <!---------------------Footer Social----------------------->
         </div>
+        <!---------------------Footer Social----------------------->
+
         <div class="footer-social">
           <p class="footer-social__join">присоединяйтесь</p>
           <ul class="footer-social__list">
@@ -377,12 +428,28 @@
             </li>
           </ul>
         </div>
+
+        <!-----------------Footer Form Subscribe------------------>
+
+        <div class="footer-subs">
+          <p class="footer-subs__title">Подпишитесь на рассылку</p>
+          <form action="#" class="footer-form">
+            <div class="form-subs">
+              <input type="email" name="mail" id="mail" placeholder="E-mail" />
+              <button type="submit" class="footer-form__button">
+                Подписаться
+                <svg class="icon-send">
+                  <use href="./images/sprite.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
 
     <!--------------------------Script----------------------------->
 
     <script src="./js/menu.js"></script>
-  
   </body>
 </html>

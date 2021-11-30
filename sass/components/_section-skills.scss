@@ -1,24 +1,28 @@
 /*     Section Skills    */
-
-.section {
-  @include lg-max {
-    @include paddingTopBot(60px, 60px);
-  }
-}
-
 .skills {
   @extend %list;
 
+  @include lg-xl-max {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @include xl {
+    display: flex;
+  }
+
   &__icon {
     @include centeredFlex();
+    height: 120px;
     margin: 0;
     border: none;
     background-color: $secondary-white-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
 
-    @include lg-max {
-      height: 120px;
+    @include xl {
+      @include widtHeight(270px, 120px);
     }
   }
 
@@ -33,6 +37,11 @@
     @include lg-max {
       text-align: center;
     }
+
+    @include xl {
+      margin: 0;
+      text-align: initial;
+    }
   }
 
   &__text {
@@ -40,11 +49,29 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71429;
+
+    @include xl {
+      margin-bottom: 0;
+      width: 270px;
+    }
   }
 
   &__item:not(:last-child) {
     @include lg-max {
       margin-bottom: 30px;
+    }
+  }
+
+  &__item {
+    @include lg-xl-max {
+      width: calc((100% - 60px) / 2);
+      margin: 15px;
+    }
+  }
+
+  &__item:not(:last-child) {
+    @include xl {
+      margin-right: 30px;
     }
   }
 }

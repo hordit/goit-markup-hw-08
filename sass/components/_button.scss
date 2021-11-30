@@ -4,7 +4,7 @@
   @extend %button;
   display: inline-block;
   padding: 10px 32px;
-  
+
   &:hover,
   &:focus {
     cursor: pointer;
@@ -19,6 +19,10 @@
   padding: 10px 28px;
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  @include xl {
+    margin-left: 12px;
+  }
 
   &:hover,
   &:focus {
@@ -86,11 +90,10 @@
 
 /*      Buttons-Examles of Portfolio      */
 
-.exemple-button {
+.example-button {
   display: inline-block;
   padding: 6px 22px;
   border-radius: 4px;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -101,6 +104,10 @@
   background-color: $secondary-white-color;
 
   transition: all 250ms $cubic;
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 
   &:hover,
   &:focus {

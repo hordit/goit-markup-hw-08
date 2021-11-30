@@ -2,9 +2,11 @@
 
 .social {
   @extend %list;
+  @include centeredFlex();
 
-  @include lg-max {
-    @include centeredFlex();
+  @include xl {
+    display: flex;
+    padding: 0 32px;
   }
 
   &__link {
@@ -28,10 +30,14 @@
 
 .footer-social {
   @include lg-max {
+    @include paddingTopBot();
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 60px;
+  }
+
+  @include xl {
+    margin-left: 70px;
   }
 
   &__list {
@@ -48,10 +54,6 @@
     line-height: 1.142;
     text-transform: uppercase;
     color: $primary-white-color;
-
-    @include lg-max {
-      padding-bottom: 20px;
-    }
   }
 
   &__link {

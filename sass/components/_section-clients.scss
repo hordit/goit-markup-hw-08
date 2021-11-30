@@ -1,23 +1,21 @@
 .clients {
   @extend %list;
-
-  @include sm-lg-max {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 
   &__link {
     @extend %link;
+    @include centeredFlex();
+    height: 92px;
     color: $icon-color;
     border: 1px solid $icon-color;
     border-radius: 4px;
 
     transition: color 250ms $cubic;
 
-    @include sm-lg-max {
-      @include centeredFlex();
-      height: 92px;
+    @include xl {
+      width: 170px;
     }
   }
 
@@ -31,8 +29,12 @@
   &__item {
     margin: 15px;
 
-    @include sm-lg-max {
+    @include lg-max {
       width: calc((100% - 60px) / 2);
+    }
+
+    @include lg-xl-max {
+      width: calc((100% - 90px) / 3);
     }
   }
 }

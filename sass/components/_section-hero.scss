@@ -16,13 +16,32 @@
   background-size: cover;
   background-position: center;
 
+  @include xl {
+    @include paddingTopBot(200px, 200px);
+  }
+
   &__title {
     font-size: 26px;
-    line-height: 1.6153;
+    line-height: 1.61538;
     margin-bottom: 30px;
     font-weight: 900;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $primary-white-color;
+
+    @include xl {
+      font-size: 44px;
+      line-height: 1.36363;
+    }
+  }
+
+  &__content {
+    max-width: 360px;
+    margin: 0 auto;
+    text-align: center;
+
+    @include xl {
+      max-width: 700px;
+    }
   }
 }

@@ -44,7 +44,12 @@
 
   @include lg {
     @include centeredFlex(flex, center, space-between);
+    padding-left: 88px;
     flex-grow: 1;
+  }
+
+  @include xl {
+    padding-left: 93px;
   }
 }
 

@@ -39,9 +39,27 @@ img {
   text-align: center;
   color: $title-text-color;
 
-  @include lg-max {
+  @include xl-max {
     margin-bottom: 30px;
     font-size: 28px;
     line-height: 1.17857;
+  }
+
+  @include xl {
+    margin-bottom: 50px;
+  }
+}
+
+.section {
+  @include paddingTopBot();
+
+  @include xl {
+    @include paddingTopBot(94px, 94px);
+  }
+
+  &__work {
+    @include xl {
+      @include paddingTopBot(94px, 0);
+    }
   }
 }

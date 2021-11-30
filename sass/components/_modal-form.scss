@@ -23,21 +23,27 @@
   transition: opacity 250ms $cubic, visibility 250ms $cubic;
 
   @include sm-lg-max {
-    padding: 94px 15px;
+    padding: 93px 15px;
+  }
+
+  @include lg {
+    padding: 208px 159px;
   }
 }
 
 .modal {
+  position: relative;
   max-width: 450px;
   padding: 40px;
   background-color: $primary-white-color;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 
-  @include sm-lg-max {
-    position: relative;
-    width: 100%;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+  @include xl {
+    min-width: 528px;
+    min-height: 581px;
   }
 
   &__title {
@@ -50,6 +56,10 @@
     @include sm-lg-max {
       line-height: 1.5;
     }
+
+    @include xl {
+      line-height: 1.15;
+    }
   }
 
   &__form {
@@ -59,13 +69,10 @@
 
   &__form-label {
     margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 1.16667;
     letter-spacing: 0.01em;
     color: $primary-text-color;
-
-    @include sm-lg-max {
-      font-size: 12px;
-      line-height: 1.16667;
-    }
   }
 
   &__form-wrapper {
@@ -138,11 +145,18 @@
 .modal-check-label {
   position: relative;
   margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.01em;
 
-  @include sm-lg-max {
-    font-size: 12px;
-    line-height: 1.16667;
-    letter-spacing: 0.01em;
+  @include lg {
+    @include centeredFlex();
+  }
+
+  @include xl {
+    @include centeredFlex();
+    font-size: 14px;
+    line-height: 1.7142;
   }
 
   &__icon {
