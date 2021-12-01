@@ -26,7 +26,7 @@
     margin-top: 40px;
   }
 
-  @include xl {
+  @include lg {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
@@ -43,6 +43,13 @@
   &__item:not(:last-child) {
     @include lg-max {
       margin-bottom: 30px;
+    }
+  }
+
+  &__item {
+    @include lg-xl-max {
+      width: calc((100% - 60px) / 2);
+      margin: 15px;
     }
   }
 
