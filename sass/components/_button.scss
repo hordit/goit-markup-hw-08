@@ -105,6 +105,12 @@
 
   transition: all 250ms $cubic;
 
+  & {
+    @include lg-max {
+      margin-bottom: 15px;
+    }
+  }
+
   &:not(:last-child) {
     margin-right: 8px;
   }

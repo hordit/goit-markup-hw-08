@@ -109,6 +109,10 @@
     align-items: center;
   }
 
+  @include xl {
+    display: flex;
+  }
+
   input {
     @include widtHeight(100%, 50px);
     padding-left: 16px;
@@ -118,9 +122,16 @@
     border-radius: 4px;
     background-color: $secondary-background-color;
 
-    @include lg-xl-max {
+    @include xl-max {
       margin-bottom: 20px;
+    }
+
+    @include lg-xl-max {
       width: 450px;
+    }
+
+    @include xl {
+      width: 358px;
     }
   }
 }
