@@ -173,31 +173,85 @@
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="about">
             <li class="about__item">
-              <img
-                src="./images/programmer-sq.jpeg"
-                alt="Сотрудник делает верстку"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/aboutwork/1about1x.webp 1x,
+                    ./images/aboutwork/1about2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    .images/aboutwork/1about1x.jpeg  1x,
+                    ./images/aboutwork/1about2x.jpeg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/aboutwork/1about1x.jpeg"
+                  alt="Employee makes layout"
+                  width="370"
+                />
+              </picture>
               <div class="about__description">
                 <p class="about__text">Десктопные приложения</p>
               </div>
             </li>
             <li class="about__item">
-              <img
-                src="./images/mobilesite-sq.jpeg"
-                alt="Рабочий делает сайт для мобильного устройства"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/aboutwork/2about1x.webp 1x,
+                    ./images/aboutwork/2about2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    .images/aboutwork/2about1x.jpeg  1x,
+                    ./images/aboutwork/2about2x.jpeg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/aboutwork/2about1x.jpeg"
+                  alt="A worker makes a website for a mobile device"
+                  width="370"
+                />
+              </picture>
               <div class="about__description">
                 <p class="about__text">Мобильные приложения</p>
               </div>
             </li>
             <li class="about__item">
-              <img
-                src="./images/ipadsite-sq.jpeg"
-                alt="Дизайнер определяет цветовую гамму"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/aboutwork/3about1x.webp 1x,
+                    ./images/aboutwork/3about2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    .images/aboutwork/3about1x.jpeg  1x,
+                    ./images/aboutwork/3about2x.jpeg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/aboutwork/3about1x.jpeg"
+                  alt="The designer defines the color scheme"
+                  width="370"
+                />
+              </picture>
               <div class="about__description">
                 <p class="about__text">Дизайнерские решения</p>
               </div>
@@ -213,7 +267,63 @@
           <h2 class="title">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
-              <img src="./images/foto1-sq.jpeg" alt="Игорь Демьяненко" />
+              <picture>
+                <source
+                  srcset="
+                    ../images/team/1mobteam1x.webp 1x,
+                    ../images/team/1mobteam2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ../images/team/1mobteam1x.jpeg 1x,
+                    ../images/team/1mobteam2x.jpeg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ../images/team/1tabteam1x.webp 1x,
+                    ../images/team/1tabteam2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp
+                  "
+                />
+                <source
+                  srcset="
+                    ../images/team/1tabteam1x.jpeg 1x,
+                    ../images/team/1tabteam2x.jpeg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ../images/team/1desteam1x.webp 1x,
+                    ../images/team/1desteam2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp
+                  "
+                />
+                <source
+                  srcset="
+                    ../images/team/1desteam1x.jpeg 1x,
+                    ../images/team/1desteam2x.jpeg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="../images/team/1mobteam1x.jpeg"
+                  alt="Игорь Демьяненко"
+                />
+              </picture>
+
               <h3 class="team__name">Игорь Демьяненко</h3>
               <p class="team__profession">Product Designer</p>
               <div>
@@ -250,7 +360,59 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/foto2-sq.jpeg" alt="Ольга Репина" />
+              <picture>
+                <source
+                  srcset="
+                    ../images/team/2mobteam1x.webp 1x,
+                    ../images/team/2mobteam2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ../images/team/2mobteam1x.jpeg 1x,
+                    ../images/team/2mobteam2x.jpeg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ../images/team/2tabteam1x.webp 1x,
+                    ../images/team/2tabteam2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp
+                  "
+                />
+                <source
+                  srcset="
+                    ../images/team/2tabteam1x.jpeg 1x,
+                    ../images/team/2tabteam2x.jpeg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ../images/team/2desteam1x.webp 1x,
+                    ../images/team/2desteam2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp
+                  "
+                />
+                <source
+                  srcset="
+                    ../images/team/2desteam1x.jpeg 1x,
+                    ../images/team/2desteam2x.jpeg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img src="../images/team/2mobteam1x.jpeg" alt="Ольга Репина" />
+              </picture>
               <h3 class="team__name">Ольга Репина</h3>
               <p class="team__profession">Frontend Developer</p>
               <div>
@@ -287,7 +449,62 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/foto3-sq.jpeg" alt="Николай Тарасов" />
+              <picture>
+                <source
+                  srcset="
+                    ../images/team/3mobteam1x.webp 1x,
+                    ../images/team/3mobteam2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ../images/team/3mobteam1x.jpeg 1x,
+                    ../images/team/3mobteam2x.jpeg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ../images/team/3tabteam1x.webp 1x,
+                    ../images/team/3tabteam2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp
+                  "
+                />
+                <source
+                  srcset="
+                    ../images/team/3tabteam1x.jpeg 1x,
+                    ../images/team/3tabteam2x.jpeg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ../images/team/3desteam1x.webp 1x,
+                    ../images/team/3desteam2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp
+                  "
+                />
+                <source
+                  srcset="
+                    ../images/team/3desteam1x.jpeg 1x,
+                    ../images/team/3desteam2x.jpeg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="../images/team/3mobteam1x.jpeg"
+                  alt="Николай Тарасов"
+                />
+              </picture>
               <h3 class="team__name">Николай Тарасов</h3>
               <p class="team__profession">Marketing</p>
               <div>
@@ -324,7 +541,62 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/foto4-sq.jpeg" alt="Михаил Ермаков" />
+              <picture>
+                <source
+                  srcset="
+                    ../images/team/4mobteam1x.webp 1x,
+                    ../images/team/4mobteam2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ../images/team/4mobteam1x.jpeg 1x,
+                    ../images/team/4mobteam2x.jpeg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ../images/team/4tabteam1x.webp 1x,
+                    ../images/team/4tabteam2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp
+                  "
+                />
+                <source
+                  srcset="
+                    ../images/team/4tabteam1x.jpeg 1x,
+                    ../images/team/4tabteam2x.jpeg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ../images/team/4desteam1x.webp 1x,
+                    ../images/team/4desteam2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp
+                  "
+                />
+                <source
+                  srcset="
+                    ../images/team/4desteam1x.jpeg 1x,
+                    ../images/team/4desteam2x.jpeg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="../images/team/4mobteam1x.jpeg"
+                  alt="Михаил Ермаков"
+                />
+              </picture>
               <h3 class="team__name">Михаил Ермаков</h3>
               <p class="team__profession">UI Designer</p>
               <div>
